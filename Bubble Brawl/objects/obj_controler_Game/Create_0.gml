@@ -7,3 +7,8 @@ P1_fb = 0;
 P2_ab = 0;
 P2_sb = 0;
 P2_fb = 0;
+
+global.winner = "";
+
+audio_stop_all();
+audio_play_sound(snd_game, 10,true);

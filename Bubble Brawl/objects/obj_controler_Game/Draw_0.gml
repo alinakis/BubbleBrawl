@@ -8,7 +8,7 @@ draw_set_alpha(1);
 draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
-draw_text(320, 10, string(minutes) + ":" + string_format(seconds, 2, 0));
+draw_text(320, 10, string_format(minutes ,2, 0) + ":" + string_format(seconds, 2, 0));
 
 draw_set_font(fnt_bubble);
 draw_set_halign(fa_left);

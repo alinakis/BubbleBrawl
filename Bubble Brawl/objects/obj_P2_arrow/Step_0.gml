@@ -26,6 +26,7 @@ if (keyboard_check_pressed(ord("I"))) {
     new_bubble.speed = 5; // Adjust speed as needed
 	obj_P2_base.P2_bubbles -= obj_bubble_P2_Attack.life;
 	obj_controler_Game.P2_ab += 1;
+	audio_play_sound(snd_bubble_spawn, 10, false);
 }
 
 if (keyboard_check_pressed(ord("O"))) {
@@ -37,6 +38,7 @@ if (keyboard_check_pressed(ord("O"))) {
     new_bubble.speed = 5; // Adjust speed as needed
 	obj_P2_base.P2_bubbles -= obj_bubble_P2_Steal.life;
 	obj_controler_Game.P2_sb += 1;
+	audio_play_sound(snd_bubble_spawn, 10, false);
 }
 
 if (keyboard_check_pressed(ord("P"))) {
@@ -48,4 +50,5 @@ if (keyboard_check_pressed(ord("P"))) {
     new_bubble.speed = 5; // Adjust speed as needed
 	obj_P2_base.P2_bubbles -= obj_bubble_P2_Food.life;
 	obj_controler_Game.P2_fb += 1;
+	audio_play_sound(snd_bubble_spawn, 10, false);
 }

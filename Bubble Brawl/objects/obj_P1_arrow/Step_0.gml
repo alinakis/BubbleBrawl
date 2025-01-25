@@ -26,17 +26,21 @@ if (keyboard_check_pressed(ord("Q"))) {
     new_bubble.speed = 5; // Adjust speed as needed
 	obj_P1_base.P1_bubbles -= obj_bubble_P1_Attack.life;
 	obj_controler_Game.P1_ab += 1;
+	audio_play_sound(snd_bubble_spawn, 10, false);
 }
 
 if (keyboard_check_pressed(ord("W"))) {
     // Create a new bubble at the arrow's position
-    var new_bubble = instance_create_layer(x, y, "Instances", obj_bubble_P1_Steal);
+	//instance_create_layer(x, y, "Instances", obj_bubble_P1_Steal);
+	var new_bubble = instance_create_layer(x, y, "Instances", obj_bubble_P1_Steal);
 
     // Set the bubble’s movement direction to match the arrow
     new_bubble.direction = angle; // The arrow’s angle
     new_bubble.speed = 5; // Adjust speed as needed
+
 	obj_P1_base.P1_bubbles -= obj_bubble_P1_Steal.life;
 	obj_controler_Game.P1_sb += 1;
+	audio_play_sound(snd_bubble_spawn, 10, false);
 }
 
 if (keyboard_check_pressed(ord("E"))) {
@@ -48,4 +52,5 @@ if (keyboard_check_pressed(ord("E"))) {
     new_bubble.speed = 5; // Adjust speed as needed
 	obj_P1_base.P1_bubbles -= obj_bubble_P1_Food.life;
 	obj_controler_Game.P1_fb += 1;
+	audio_play_sound(snd_bubble_spawn, 10, false);
 }
