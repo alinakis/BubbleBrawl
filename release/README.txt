@@ -1,4 +1,4 @@
-INSSTRUCTIONS
+INSTRUCTIONS
 
 This is a 2 player PvP arena.
 
