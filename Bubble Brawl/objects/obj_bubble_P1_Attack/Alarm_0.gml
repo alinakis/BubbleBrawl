@@ -1,1 +1,0 @@
-allow_damage = true;
