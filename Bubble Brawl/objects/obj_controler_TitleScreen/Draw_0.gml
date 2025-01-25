@@ -9,12 +9,3 @@ draw_set_font(fnt_title);
 draw_set_alpha(1);
 draw_set_color(c_white);
 draw_text_ext(320,50,"Bubble Brawl",30,640);
-
-
-// Logo Shadow
-//draw_set_font(fnt_title);
-//draw_set_alpha(0.4);
-//draw_set_color(c_grey);
-//draw_text_ext(321,51,"Bubble Brawl",30,640);
-
-
