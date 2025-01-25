@@ -1,16 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_P1_base",
+  "%Name":"obj_bubble_P2_Steal",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_P1_base","path":"objects/obj_P1_base/obj_P1_base.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_P1_base",
+  "name":"obj_bubble_P2_Steal",
   "overriddenProperties":[],
   "parent":{
-    "name":"P1",
-    "path":"folders/Objects/Game/P1.yy",
+    "name":"P2",
+    "path":"folders/Objects/Game/P2.yy",
   },
   "parentObjectId":null,
   "persistent":false,

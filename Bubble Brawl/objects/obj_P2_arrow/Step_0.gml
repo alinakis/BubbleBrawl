@@ -24,4 +24,15 @@ if (keyboard_check_pressed(ord("I"))) {
     // Set the bubble’s movement direction to match the arrow
     new_bubble.direction = angle + 180; // The arrow’s angle
     new_bubble.speed = 5; // Adjust speed as needed
+	obj_P2_base.P2_bubbles -= obj_bubble_P2_Attack.life;
+}
+
+if (keyboard_check_pressed(ord("O"))) {
+    // Create a new bubble at the arrow's position
+    var new_bubble = instance_create_layer(x, y, "Instances", obj_bubble_P2_Steal);
+
+    // Set the bubble’s movement direction to match the arrow
+    new_bubble.direction = angle; // The arrow’s angle
+    new_bubble.speed = 5; // Adjust speed as needed
+	obj_P1_base.P2_bubbles -= obj_bubble_P2_Steal.life;
 }
